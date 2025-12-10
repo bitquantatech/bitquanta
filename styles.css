@@ -549,18 +549,31 @@ img {
 
 /* Responsive */
 @media (max-width: 768px) {
+    .hero {
+        height: auto;
+        min-height: auto;
+        padding: 6rem 0 3rem;
+        /* Add top padding for navbar */
+    }
+
     .hero-container {
         flex-direction: column;
         text-align: center;
-        padding-top: 2rem;
+        gap: 2rem;
     }
 
     .hero-text {
         margin-bottom: 2rem;
+        max-width: 100%;
+    }
+
+    .hero-image {
+        max-width: 100%;
+        margin-top: 1rem;
     }
 
     .hero h1 {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
 
     .nav-links {
