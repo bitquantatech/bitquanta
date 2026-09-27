@@ -46,9 +46,10 @@ use that service. External email senders are disabled by its local script.
 
 Deploy the reviewed inspection application first. It adds contact-only CORS for
 `https://bitquanta.org` and `https://www.bitquanta.org` and contains the video and
-report features described here. Then publish this static site using its existing
-hosting setup. This work has not changed hosting or DNS, pushed a branch, or
-published either site.
+report features described here. Then publish this static site through GitHub Pages, which builds `main` from
+the repository root and serves the existing `bitquanta.org` custom domain.
+Both sites were published and verified on 2026-09-27. Hosting and DNS are unchanged.
+The company application release is `093fd00`; the inspection release is `ab1b671`.
 
 Do not synchronize data folders between the projects. User accounts and the live
 SQLite database remain on the Bitquanta inspection VM. No database changes are
