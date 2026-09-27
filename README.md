@@ -115,7 +115,7 @@ the contact form. The public example does not accept uploads or bypass login.
 
 Current assets: `assets/tank-inspection-demo-en.mp4`,
 `assets/tank-inspection-demo-tr.mp4` and `assets/tank-inspection-demo-poster-*.jpg`.
-Shared player version: **20260927-19**. Reproducible rendering source is
+Shared player version: **20260927-20**. Reproducible rendering source is
 `scripts/render_marketing_demo.py` in the inspection repository. Its dependencies
 are NumPy, Pillow and PyAV; font paths can be supplied with `DEMO_FONT` and
 `DEMO_FONT_BOLD`. Render with `python scripts/render_marketing_demo.py --video`.

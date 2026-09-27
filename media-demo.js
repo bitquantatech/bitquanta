@@ -80,6 +80,7 @@ document.querySelectorAll('[data-media-demo]').forEach(demo => {
   play.addEventListener('click', startPlayback);
   demo.querySelector('[data-demo-replay]').addEventListener('click', () => {
     video.currentTime = 0;
+    showResult(false);
     // Keep keyboard focus on a visible control when the outro disappears.
     video.focus({ preventScroll: true });
     startPlayback();
