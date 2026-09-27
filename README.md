@@ -57,3 +57,39 @@ needed for these website improvements.
 
 Full local verification and deployment notes are in the sibling inspection
 project's `docs/WEBSITE_IMPROVEMENTS.md`.
+
+## Stabilized illustrative walkthrough — September 27
+
+The eight-second silent demo uses one continuous camera passage from the side
+wall to the end surface, with illustrative residue already tracked onto it as
+it enters view. Source seconds 14.2–17.8 play at half speed with a 0.8-second hold.
+The opening is subtly reframed to show the side wall; no scene cuts or dissolves
+are used. Motion interpolation smooths playback. The exact final video frame
+becomes the close-up and result view, including a fresh smooth zoom on replay.
+This replaces the rejected ten-second sequence that showed the same surface
+clean first and dirty later.
+
+The manually set demo score remains 0.92 / 1 (0,92 / 1 in Turkish), with the short
+Score / Skor heading and compact Illustrative demo / Temsili demo badge. The
+generated reference still's measured 0.8385 score remains separately preserved
+under measured_reference in assets/tank-illustrative-demo-result.json. Source
+ranges and current file hashes are recorded there. No model behavior changed.
+
+The result CTA is Request a demo / Demo talep edin, leading to the existing
+contact form. It closes the enlarged player and focuses the contact heading.
+Existing sign-in links let approved customers use their own photos and videos.
+Live authentication was checked read-only: DEMO_MODE=false; anonymous inspection
+requests return HTTP 401. Login requires an approved account. No accounts,
+passwords, database data or production settings were changed.
+
+Replay video / Videoyu tekrar izle restarts from zero in inline and enlarged
+views. Full frame / Zoom in and Back remain available. The Photo tab is unchanged.
+
+Assets: assets/tank-inspection-illustrative-demo.mp4,
+assets/tank-inspection-illustrative-ending.png and
+assets/tank-inspection-illustrative-poster.jpg. Component version: 20260927-18.
+Two-pass camera stabilization smooths translation and roll before interpolation;
+a fixed 1.1745x crop avoids exposed borders. The poster and exact ending frame
+are regenerated to match. The eight-second clip remains silent.
+Editing notes are in the sibling inspection project's docs/VIDEO_DEMO_TRIAL.md;
+publication/data-preservation records are in docs/RELEASE_2026-09-27_DEMO.md there.

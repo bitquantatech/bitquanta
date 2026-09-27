@@ -1,0 +1,82 @@
+{
+  "updated_at": "2026-09-27T19:00:35.366060+00:00",
+  "scope": "illustrative_marketing_demo",
+  "display": {
+    "verdict": "DIRTY",
+    "illustrative_score": 0.92,
+    "source": "Manually set for the demonstration at the user request; not model output or confidence.",
+    "label_en": "Score",
+    "label_tr": "Skor"
+  },
+  "presentation": "One continuous camera move from the side wall to the end surface, with illustrative residue tracked into view. The opening is digitally reframed to exclude the initial rim sliver, easing back to the full frame within two seconds. No scene cuts or dissolves. Motion-interpolated half-speed playback ends with a 0.8-second hold, then the exact final frame is used for the zoom and demo result. Two-pass camera stabilization removes rapid translation and roll changes before motion interpolation; a fixed 1.1745x crop avoids exposed edges.",
+  "image_edit": "Brown cargo residue added using the built-in image-generation tool; not an unaltered inspection capture.",
+  "duration_seconds": 8,
+  "audio": false,
+  "assets": {
+    "video": {
+      "file": "tank-inspection-illustrative-demo.mp4",
+      "sha256": "8594c7afbba25705c19828c9d7b98d918848763aa6bd25c1e9357e915808260b"
+    },
+    "ending": {
+      "file": "tank-inspection-illustrative-ending.png",
+      "sha256": "d27afbca86b8e78236f2328e9459aa97b70f9406f14398118966d7da737441e7"
+    },
+    "poster": {
+      "file": "tank-inspection-illustrative-poster.jpg",
+      "sha256": "47c3668183e68023addaef30661f0c9f934493d608cc550c76083c5317d07f26"
+    }
+  },
+  "measured_reference": {
+    "recorded_at": "2026-09-27T18:03:00.418249+00:00",
+    "dirty_score": 0.8385,
+    "threshold": 0.35,
+    "by_architecture": {
+      "efficientnet_b0": {
+        "display_name": "EfficientNet-B0",
+        "dirty_prob": 0.7841,
+        "verdict": "DIRTY"
+      },
+      "convnext_tiny": {
+        "display_name": "ConvNeXt-Tiny",
+        "dirty_prob": 0.6994,
+        "verdict": "DIRTY"
+      },
+      "efficientnetv2_s": {
+        "display_name": "EfficientNetV2-S",
+        "dirty_prob": 0.8385,
+        "verdict": "DIRTY"
+      },
+      "dinov2_s": {
+        "display_name": "DINOv2-S",
+        "dirty_prob": 0.6875,
+        "verdict": "DIRTY"
+      }
+    },
+    "model_version": "bdecba82014b3ba00db5e9eac2ef06216ab0bef9be14a8c12a0a4e4c662a2806",
+    "relevance_status": "accepted",
+    "score_type": "uncalibrated_dirty_score",
+    "image_file": "tank-inspection-illustrative-frame.png",
+    "image_sha256": "95d5ba32c6e889c84cf43e84e022820689f37d93d4eee13bf36a4bfda1cd3637",
+    "scope": "Original generated still only; not the manually staged display score or a whole-video measurement."
+  },
+  "zoom": "Editorial focus; not model-generated localization.",
+  "source_sequences": [
+    {
+      "source_seconds": [
+        14.2,
+        17.8
+      ],
+      "role": "Continuous side-wall to end-surface sweep with tracked illustrative residue",
+      "speed": 0.5,
+      "hold_seconds": 0.8,
+      "edited_pixels": true
+    }
+  ],
+  "transition_seconds": 0,
+  "stabilization": {
+    "method": "Two-pass robust optical-flow camera translation and roll smoothing, before 30 fps motion interpolation",
+    "smoothing_window_sigma_seconds": 0.3333333333333333,
+    "fixed_crop_zoom": 1.17450386762619,
+    "no_exposed_edges": true
+  }
+}

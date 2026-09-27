@@ -1,0 +1,41 @@
+{
+  "recorded_at": "2026-09-27T17:39:00.151668+00:00",
+  "scope": "selected_frame_only",
+  "source_excerpt_seconds": [
+    15,
+    21
+  ],
+  "frame_seconds_in_excerpt": 2,
+  "frame_seconds_in_source": 17,
+  "video_sha256": "563fd8bd96f773f7f0048dfef1875a2f33ca75270371437d8bfd309784bad44d",
+  "frame_sha256": "7cd0aef3f4e750344b4459192876b32f0c0a6d764d4af01189ac7861bde2717b",
+  "verdict": "DIRTY",
+  "dirty_score": 0.5646,
+  "threshold": 0.35,
+  "by_architecture": {
+    "efficientnet_b0": {
+      "display_name": "EfficientNet-B0",
+      "dirty_prob": 0.5646,
+      "verdict": "DIRTY"
+    },
+    "convnext_tiny": {
+      "display_name": "ConvNeXt-Tiny",
+      "dirty_prob": 0.3276,
+      "verdict": "REVIEW"
+    },
+    "efficientnetv2_s": {
+      "display_name": "EfficientNetV2-S",
+      "dirty_prob": 0.4195,
+      "verdict": "DIRTY"
+    },
+    "dinov2_s": {
+      "display_name": "DINOv2-S",
+      "dirty_prob": 0.4357,
+      "verdict": "DIRTY"
+    }
+  },
+  "model_version": "bdecba82014b3ba00db5e9eac2ef06216ab0bef9be14a8c12a0a4e4c662a2806",
+  "relevance_status": "accepted",
+  "zoom": "illustrative editorial focus; model does not localize contamination",
+  "score_type": "uncalibrated_dirty_score"
+}
