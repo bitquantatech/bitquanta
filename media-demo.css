@@ -37,24 +37,12 @@
 [data-media-demo] .demo-video-dialog .demo-caption-actions{display:none}
 body:has(.demo-video-dialog[open]){overflow:hidden}
 @media(max-width:440px){[data-media-demo] .demo-video-dialog{width:calc(100vw - 1rem);max-height:calc(100dvh - 1rem)}[data-media-demo] .demo-dialog-header{padding:.5rem .75rem;gap:.5rem}[data-media-demo] .demo-dialog-header h2{font-size:.9rem}[data-media-demo] .demo-dialog-close{font-size:.75rem;padding:.55rem .65rem}}
-[data-media-demo] .demo-stage-badge{position:absolute;top:.7rem;left:.7rem;z-index:1;padding:.3rem .5rem;border-radius:4px;background:#102b3fe8;color:white;font-size:.65rem;font-weight:650;letter-spacing:.03em;pointer-events:none}
-[data-media-demo] .demo-focus{position:relative;width:100%;aspect-ratio:16/9;overflow:hidden;background:#102b3f}
-[data-media-demo] .demo-frame-canvas{position:absolute;inset:0;transform-origin:37% 100%;transform:scale(1)}
-[data-media-demo] .demo-frame-canvas img{display:block;width:100%;height:100%;max-height:none;margin:0;border-radius:0;object-fit:contain}
-[data-media-demo] .demo-focus.is-zoomed .demo-frame-canvas{animation:demo-frame-zoom 2s cubic-bezier(.45,0,.25,1) both;transform:scale(1.7)}
-@keyframes demo-frame-zoom{from{transform:scale(1)}to{transform:scale(1.7)}}
-[data-media-demo] .demo-focus-mark{position:absolute;left:17%;top:51%;width:36%;height:44%;border:2px solid #ffcf69;border-radius:4px;box-shadow:0 0 0 1px #102b3f55;box-sizing:border-box}
-[data-media-demo] .demo-frame-controls{position:absolute;bottom:.65rem;left:.65rem;display:flex;gap:.3rem}
-[data-media-demo] .demo-frame-controls button{min-height:36px;padding:.4rem .6rem;background:#102b3fe8;border:1px solid #ffffff99;border-radius:5px;color:white;font:inherit;font-size:.7rem;cursor:pointer}
-[data-media-demo] .demo-frame-controls button[aria-pressed=true]{background:white;color:#102b3f}
 [data-media-demo] .demo-frame-result{display:flex;align-items:center;justify-content:space-between;gap:1rem;margin:.45rem 0 .85rem}
 [data-media-demo] .demo-frame-result strong{color:#9b4138;font-size:1.4rem;margin:0}
 [data-media-demo] .demo-frame-score{display:flex;flex-direction:column;gap:.2rem;align-items:flex-end}
 [data-media-demo] .demo-frame-score span{font-size:.72rem;color:#526574}
 [data-media-demo] .demo-frame-score b{font-size:1.15rem;color:#102b3f;font-variant-numeric:tabular-nums}
-@media(prefers-reduced-motion:reduce){[data-media-demo] .demo-focus.is-zoomed .demo-frame-canvas{animation:none}}
 
-[data-media-demo] .demo-video-dialog .demo-focus{width:min(100%,103.11dvh);margin-inline:auto}
 
 /* Reserve the larger caption so the player stays still when results appear. */
 [data-media-demo] .demo-caption-body{display:grid}

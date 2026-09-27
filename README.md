@@ -58,7 +58,7 @@ needed for these website improvements.
 Full local verification and deployment notes are in the sibling inspection
 project's `docs/WEBSITE_IMPROVEMENTS.md`.
 
-## Stabilized illustrative walkthrough — September 27
+## Previous stabilized walkthrough — September 27 (superseded)
 
 The eight-second silent demo uses one continuous camera passage from the side
 wall to the end surface, with illustrative residue already tracked onto it as
@@ -93,3 +93,29 @@ a fixed 1.1745x crop avoids exposed borders. The poster and exact ending frame
 are regenerated to match. The eight-second clip remains silent.
 Editing notes are in the sibling inspection project's docs/VIDEO_DEMO_TRIAL.md;
 publication/data-preservation records are in docs/RELEASE_2026-09-27_DEMO.md there.
+
+## Current demo — September 27
+
+The selected 14-second silent demo is rendered directly at 1280×720, 60 fps.
+Its camera moves from the side wall toward one end surface, then closes in on
+permanent residue and ends on the result. No captured footage or frame
+interpolation is used. Layered translucent stains, irregular deposits and runoff
+remain fixed on the surface throughout the camera move.
+
+The public badge is simply **Demo** in both languages. The score **0.92 / 1**
+(**0,92 / 1** in Turkish) is manually staged for this marketing example; it is
+not a measured model result, confidence or an accuracy claim. The focus brackets
+are editorial. `assets/tank-marketing-demo.json` records this provenance and hashes.
+The older measured reference remains separate in `tank-illustrative-demo-result.json`.
+
+The page selects the English or Turkish video with its language controls,
+preserving playback position. The final frame stays in the player; Replay video
+restarts from zero, and Back closes the enlarged player. Request a demo goes to
+the contact form. The public example does not accept uploads or bypass login.
+
+Current assets: `assets/tank-inspection-demo-en.mp4`,
+`assets/tank-inspection-demo-tr.mp4` and `assets/tank-inspection-demo-poster-*.jpg`.
+Shared player version: **20260927-19**. Reproducible rendering source is
+`scripts/render_marketing_demo.py` in the inspection repository. Its dependencies
+are NumPy, Pillow and PyAV; font paths can be supplied with `DEMO_FONT` and
+`DEMO_FONT_BOLD`. Render with `python scripts/render_marketing_demo.py --video`.
