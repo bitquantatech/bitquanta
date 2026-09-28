@@ -94,7 +94,7 @@ are regenerated to match. The eight-second clip remains silent.
 Editing notes are in the sibling inspection project's docs/VIDEO_DEMO_TRIAL.md;
 publication/data-preservation records are in docs/RELEASE_2026-09-27_DEMO.md there.
 
-## Current demo — September 27
+## Previous procedural demo — September 27 (superseded)
 
 The selected 14-second silent demo is rendered directly at 1280×720, 60 fps.
 Its camera moves from the side wall toward one end surface, then closes in on
@@ -119,3 +119,22 @@ Shared player version: **20260927-20**. Reproducible rendering source is
 `scripts/render_marketing_demo.py` in the inspection repository. Its dependencies
 are NumPy, Pillow and PyAV; font paths can be supplied with `DEMO_FONT` and
 `DEMO_FONT_BOLD`. Render with `python scripts/render_marketing_demo.py --video`.
+
+## Current supplied demo — September 28
+
+The active clip is `assets/bitquanta_tank_demo_draft.mp4`, supplied by the user and
+copied byte-for-byte: 20 seconds, silent, 1280×720 H.264, 30 fps. It includes its
+own English photo/video overlays and illustrative scores. Both language pages use
+this same clip; surrounding controls and copy remain localized.
+
+The former external 0.92 result card is removed. At completion the player shows
+an exact extracted frame from second 17, so the supplied fade-to-black does not
+leave the page blank. Replay restores the video from zero; Back and Request a
+demo remain available. The poster is extracted at second 2. The standalone photo
+example remains unchanged.
+
+`tank-marketing-demo.json` records the current supplied-media provenance and
+hashes. `tank-marketing-demo-20260927.json` preserves the prior procedural demo
+record. The embedded scores and highlighted regions are demonstration graphics,
+not measurements of this service’s performance. No model or inference change.
+Shared player/page version: **20260928-01**.

@@ -1,4 +1,4 @@
-/* Illustrative marketing walkthrough; its display score is staged and playback never runs inference. */
+/* User-supplied marketing walkthrough; its embedded scores are illustrative. */
 'use strict';
 document.querySelectorAll('[data-media-demo]').forEach(demo => {
   const video = demo.querySelector('video');
@@ -6,12 +6,14 @@ document.querySelectorAll('[data-media-demo]').forEach(demo => {
   const error = demo.querySelector('[data-demo-error]');
   const intro = demo.querySelector('[data-demo-intro]');
   const outro = demo.querySelector('[data-demo-outro]');
+  const ending = demo.querySelector('[data-demo-ending]');
   let finished = false;
   let playbackRequest = 0;
   const showResult = ended => {
     finished = ended;
     // Keep the end card unobscured; the visible replay button restores controls.
     video.controls = !ended;
+    ending.hidden = !ended;
     intro.hidden = ended;
     outro.hidden = !ended;
     play.hidden = ended || !video.paused;
@@ -90,7 +92,7 @@ document.querySelectorAll('[data-media-demo]').forEach(demo => {
   });
   video.addEventListener('pause', () => { play.hidden = finished || video.ended; });
   video.addEventListener('ended', () => {
-    // The clip includes the close-up and result. Retain its actual final frame.
+    // The supplied clip fades to black. Show its result frame after completion.
     showResult(true);
   });
   video.addEventListener('seeking', () => {
@@ -98,23 +100,25 @@ document.querySelectorAll('[data-media-demo]').forEach(demo => {
   });
   video.addEventListener('error', () => { error.hidden = false; play.hidden = true; });
 
-  // Localize the in-video copy as well as the page, retaining the user's position.
+  // Support localized clips while avoiding a reload when both pages use one video.
   let activeLanguage = 'en';
   let resumeState = null;
   const syncLanguage = () => {
     const language = document.documentElement.lang === 'tr' ? 'tr' : 'en';
     if (language === activeLanguage) return;
+    const source = video.dataset[language === 'tr' ? 'srcTr' : 'srcEn'];
+    activeLanguage = language;
+    video.poster = video.dataset[language === 'tr' ? 'posterTr' : 'posterEn'];
+    if (video.getAttribute('src') === source) return;
     const state = resumeState || {
       time: video.currentTime,
       ended: finished || video.ended,
       playing: !video.paused
     };
-    activeLanguage = language;
     resumeState = state;
     ++playbackRequest;
     video.pause();
-    video.poster = video.dataset[language === 'tr' ? 'posterTr' : 'posterEn'];
-    video.src = video.dataset[language === 'tr' ? 'srcTr' : 'srcEn'];
+    video.src = source;
     if (state.time > 0 || state.playing || state.ended) video.preload = 'auto';
     error.hidden = true;
     video.load();

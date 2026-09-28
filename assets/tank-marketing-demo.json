@@ -1,44 +1,37 @@
 {
-  "updated_at": "2026-09-27T19:39:50.675937+00:00",
-  "scope": "synthetic_marketing_demo",
-  "presentation": "Procedural 3D scene, permanent surface residue, smooth camera movement from side wall to end surface and close-up. Rendered natively at 60 fps; no captured footage, editing cuts or frame interpolation.",
-  "display": {
-    "badge": "Demo",
-    "verdict_en": "DIRTY",
-    "verdict_tr": "KİRLİ",
-    "illustrative_score": 0.92,
-    "label_en": "Score",
-    "label_tr": "Skor",
-    "source": "Manually staged at user request. Not model output, calibrated confidence or a measured accuracy."
-  },
-  "localization": "Separate English and Turkish overlays; same geometry and camera. The page switches video while retaining playback position.",
-  "residue": "Procedurally layered translucent stains, broken tide marks, darker deposits, fine pores and runoff in stable surface coordinates.",
-  "focus": "Editorial brackets and camera close-up; not model-generated detection or localization.",
-  "duration_seconds": 14,
+  "updated_at": "2026-09-28T07:28:08.144829+00:00",
+  "scope": "user_supplied_marketing_demo",
+  "presentation": "User-supplied 20-second photo/video inspection montage. The MP4 is copied byte-for-byte, including its embedded illustrative-score labeling, English overlays and black fade-out.",
+  "source_filename": "bitquanta_tank_demo_draft.mp4",
+  "source_sha256": "0195c614248217090d1f49a79de8c1218a8cbedba75aa3719c3671be9ab1e307",
+  "duration_seconds": 20,
   "width": 1280,
   "height": 720,
-  "fps": 60,
+  "fps": 30,
+  "frames": 600,
   "audio": false,
-  "renderer": "scripts/render_marketing_demo.py in sbilmis/tank-cleanliness-ai",
-  "renderer_sha256": "2ed0f9c99af64b9091f7cafa93b3b4c47431e57059424ac184754cff008f7e52",
+  "display": {
+    "source": "All in-video labels, scores, regions and result graphics are supplied illustrative content, not verified inference from this service. The former external 0.92 result card has been removed.",
+    "page_result_score": null
+  },
+  "localization": "The same supplied video with embedded English text is shown on EN/TR pages. Surrounding labels, accessible descriptions, playback controls and calls to action are localized. Changing page language does not reload this shared video.",
+  "poster_source_seconds": 2,
+  "ending_image_source_seconds": 17,
+  "ending_behavior": "After the video fades to black and finishes, the player shows the supplied clip’s result frame at second 17, with Replay and Request a demo. No additional zoom or numerical result is added.",
   "assets": {
-    "tank-inspection-demo-en.mp4": {
-      "sha256": "d08000cfa9950ce4ae6eb485b086ff9620a0c2e79b461989cb3270456656601e",
-      "bytes": 1747348
+    "bitquanta_tank_demo_draft.mp4": {
+      "sha256": "0195c614248217090d1f49a79de8c1218a8cbedba75aa3719c3671be9ab1e307",
+      "bytes": 4274819
     },
-    "tank-inspection-demo-poster-en.jpg": {
-      "sha256": "2ab57bb66c4175beeb8939b2492838dd79f88cc50b3a11f3f1c3781106e0a5bf",
-      "bytes": 60955
+    "bitquanta-tank-demo-poster.jpg": {
+      "sha256": "7f0d2ae78c89c17ded411530869208e600b468d380bc31320487697804abdc2c",
+      "bytes": 46554
     },
-    "tank-inspection-demo-tr.mp4": {
-      "sha256": "84a56c20dbd136bc11f5da19128647985bd614267ddc053778acaa9e55693d60",
-      "bytes": 1750765
-    },
-    "tank-inspection-demo-poster-tr.jpg": {
-      "sha256": "fc5e20a310682a4b475072f7d222a5195a8473d0afc18e58f93306137d9d4725",
-      "bytes": 61391
+    "bitquanta-tank-demo-result.jpg": {
+      "sha256": "b42bf5c829c42441a6f5a8a6f38fdec9ee6118cfc51d98069dcb2c1bce290783",
+      "bytes": 44693
     }
   },
-  "previous_demo": "tank-illustrative-demo-result.json retains the earlier edited-footage history and separately measured reference still. Its measurements do not apply to this synthetic demo.",
-  "production": "Playback does not run inference. Inspection algorithms, models, thresholds, authentication and production data are unchanged."
+  "previous_demo": "tank-marketing-demo-20260927.json preserves the preceding procedural demo provenance. Its 0.92 score does not apply to this supplied clip.",
+  "production": "Static marketing media/player update only; models, actual prediction scores, thresholds, authentication and runtime data remain unchanged."
 }

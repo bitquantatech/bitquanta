@@ -1,0 +1,44 @@
+{
+  "updated_at": "2026-09-27T19:39:50.675937+00:00",
+  "scope": "synthetic_marketing_demo",
+  "presentation": "Procedural 3D scene, permanent surface residue, smooth camera movement from side wall to end surface and close-up. Rendered natively at 60 fps; no captured footage, editing cuts or frame interpolation.",
+  "display": {
+    "badge": "Demo",
+    "verdict_en": "DIRTY",
+    "verdict_tr": "KİRLİ",
+    "illustrative_score": 0.92,
+    "label_en": "Score",
+    "label_tr": "Skor",
+    "source": "Manually staged at user request. Not model output, calibrated confidence or a measured accuracy."
+  },
+  "localization": "Separate English and Turkish overlays; same geometry and camera. The page switches video while retaining playback position.",
+  "residue": "Procedurally layered translucent stains, broken tide marks, darker deposits, fine pores and runoff in stable surface coordinates.",
+  "focus": "Editorial brackets and camera close-up; not model-generated detection or localization.",
+  "duration_seconds": 14,
+  "width": 1280,
+  "height": 720,
+  "fps": 60,
+  "audio": false,
+  "renderer": "scripts/render_marketing_demo.py in sbilmis/tank-cleanliness-ai",
+  "renderer_sha256": "2ed0f9c99af64b9091f7cafa93b3b4c47431e57059424ac184754cff008f7e52",
+  "assets": {
+    "tank-inspection-demo-en.mp4": {
+      "sha256": "d08000cfa9950ce4ae6eb485b086ff9620a0c2e79b461989cb3270456656601e",
+      "bytes": 1747348
+    },
+    "tank-inspection-demo-poster-en.jpg": {
+      "sha256": "2ab57bb66c4175beeb8939b2492838dd79f88cc50b3a11f3f1c3781106e0a5bf",
+      "bytes": 60955
+    },
+    "tank-inspection-demo-tr.mp4": {
+      "sha256": "84a56c20dbd136bc11f5da19128647985bd614267ddc053778acaa9e55693d60",
+      "bytes": 1750765
+    },
+    "tank-inspection-demo-poster-tr.jpg": {
+      "sha256": "fc5e20a310682a4b475072f7d222a5195a8473d0afc18e58f93306137d9d4725",
+      "bytes": 61391
+    }
+  },
+  "previous_demo": "tank-illustrative-demo-result.json retains the earlier edited-footage history and separately measured reference still. Its measurements do not apply to this synthetic demo.",
+  "production": "Playback does not run inference. Inspection algorithms, models, thresholds, authentication and production data are unchanged."
+}
