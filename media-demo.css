@@ -45,3 +45,6 @@ body:has(.demo-video-dialog[open]){overflow:hidden}
 [data-media-demo] .demo-caption-body>[data-demo-intro],
 [data-media-demo] .demo-caption-body>[data-demo-outro]{grid-area:1/1;min-width:0}
 [data-media-demo] .demo-caption-body>[hidden]{display:block!important;visibility:hidden;pointer-events:none}
+
+[data-media-demo] .demo-sample-report{padding:1rem 1.25rem;border-top:1px solid #d7e3ea;background:#f5f9fb;font-size:.875rem}
+[data-media-demo] .demo-sample-report a{color:#126d91;font-weight:600;text-underline-offset:3px}

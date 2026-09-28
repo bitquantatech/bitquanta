@@ -4,6 +4,7 @@ const tr = key => COMPANY_I18N[language][key] || COMPANY_I18N.en[key] || '';
 function setLanguage(value){
   language=value==='tr'?'tr':'en';document.documentElement.lang=language;
   document.title=tr('doc.title');
+  document.querySelectorAll('[data-sample-report]').forEach(el=>el.href=el.dataset[language==='tr'?'reportTr':'reportEn']);
   document.querySelector('meta[name="description"]').content=tr('doc.description');
   document.querySelectorAll('[data-i18n]').forEach(el=>{const text=tr(el.dataset.i18n);if(text)el.textContent=text;});
   document.querySelectorAll('[data-i18n-aria]').forEach(el=>el.setAttribute('aria-label',tr(el.dataset.i18nAria)));

@@ -116,6 +116,7 @@ const COMPANY_I18N = {
     "demo.nextLabel": "Demo complete",
     "demo.dialogTitle": "Video walkthrough",
     "demo.back": "Back to examples",
+    "demo.sampleReport": "View sample report (PDF)",
     "demo.nextHeading": "Let’s discuss your inspection needs.",
     "demo.endingAlt": "Result frame from the demo showing highlighted residue and an illustrative photo assessment"
   },
@@ -236,6 +237,7 @@ const COMPANY_I18N = {
     "demo.nextLabel": "Demo tamamlandı",
     "demo.dialogTitle": "Video denetim örneği",
     "demo.back": "Örneklere dön",
+    "demo.sampleReport": "Örnek raporu görüntüle (PDF)",
     "demo.nextHeading": "Denetim ihtiyacınızı birlikte değerlendirelim.",
     "demo.endingAlt": "Demoda kalıntının işaretlendiği ve örnek fotoğraf değerlendirmesinin gösterildiği sonuç karesi"
   }
