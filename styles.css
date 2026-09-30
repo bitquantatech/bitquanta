@@ -623,3 +623,18 @@ html{scroll-behavior:smooth}body{background:#fff}.navbar{box-shadow:none;border-
 
 .hero-container{width:100%;min-width:0}.hero-text,.hero-image{min-width:0}
 @media(max-width:359px){.nav-links{display:grid;grid-template-columns:1fr 1fr;gap:.1rem 1rem}.nav-links a{padding:.25rem 0}.hero h1{font-size:2.15rem}.vision-flow{font-size:.75rem;gap:.4rem}}
+
+/* Inspection platform navigation */
+.nav-links a.nav-inspection{padding:.6rem .9rem;border-radius:8px;background:#146c91;color:#fff;font-weight:650;white-space:nowrap;min-height:44px;display:flex;align-items:center;justify-content:center}
+.nav-links a.nav-inspection:hover{background:#0d506e;color:#fff}
+@media(max-width:1000px){
+  html{scroll-padding-top:150px}
+  .navbar .container{display:grid;grid-template-columns:1fr auto;gap:.5rem 1rem}
+  .navbar .lang-toggle{grid-column:2;grid-row:1}
+  .nav-links{display:flex;grid-column:1/-1;grid-row:2;justify-content:space-between;align-items:center;margin:0;gap:.5rem;flex-wrap:wrap}
+}
+@media(max-width:600px){
+  html{scroll-padding-top:190px}
+  .nav-links .nav-product{flex-basis:100%}
+  .nav-links a.nav-inspection{padding:.6rem .9rem}
+}
